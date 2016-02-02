@@ -22,10 +22,15 @@
     </header>
 
     <ol>
-      <li>The Iron Yard welcomes new DC engineering cohorts</li>
-      <li>Beer is delicious, says beer spokesman</li>
-      <li>Let's stop laughing at Groupon</li>
-      <li>node.js</li>
+      <li>The Iron Yard welcomes new DC engineering cohorts<small> (theironyard.com)</small></li>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+          Found that permitted content in a <li> is flow content such as <small> -->
+        <ul>
+          <li=currentstatus>144 points by CapitalistCartr 1 hour ago | 14 comments</li>
+        </ul>
+      <li>Beer is delicious, says beer spokesman<small> (cbc.ca)</small></li>
+      <li>Let's stop laughing at Groupon<small> (fortune.com)</small></li>
+      <li>node.js<small> (nodejs.com)</small></li>
       <li>Just Ruby Things</li>
       <li>How to Ramen-ize Died Pasta and Rice</li>
       <li>Inside the world of longsword fighting</li>
@@ -39,5 +44,11 @@
       <li>On Eigenfaces: I have no idea what an Eigenface is</li>
       <li>Coding is awesome</li>
     </ol>
+
+    <footer>
+      <p>search:</p>
+      <input type="search" name="search"/>
+    </footer>
+
   </body>
 </html>
