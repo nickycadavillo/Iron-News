@@ -1,0 +1,48 @@
+
+body {
+  font-family: verdana;
+}
+
+nav { /*header and nav bar */
+  background-color: lightslategray;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+ol { /*ordered list with headlines*/
+  background-color: mintcream;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+ul { /*selects all the unordered lists*/
+  list-style: none;
+}
+
+
+li.currentstatus { /* text below the headline*/
+  font-size: 10pt;
+  color: gray;
+  margin-left: -6%;
+}
+
+small.link { /* small link within parenthesis*/
+  color: gray
+}
+
+/*
+li.numbers::after {
+  content: url(grayarrow.gif);
+}
+*/
+
+/*http://stackoverflow.com/questions/76564/is-there-an-easy-way-to-change-the-color-of-a-bullet-in-a-list?rq=1*/
+li span {
+  color: black;
+}
+
+li.numbers {
+  color: gray;
+}
