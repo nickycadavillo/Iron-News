@@ -5,40 +5,45 @@ body {
 
 nav { /*header and nav bar */
   background-color: lightslategray;
-  width: 80%;
+  width: 83%;
   margin-left: 5%;
 }
 
-nav ul { /* */
+nav ul.navbar { /* unordered list for navbar */
   margin: 0px;
-  padding: 5px 0px 5px 30px;
+  padding: 5px 0px 5px 10px;
 }
 
-nav li { /* */
+nav li { /* keeps the header list on one vertical line */
   display:inline;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-li.line {
+li.line { /*lines in between nav titles*/
   color: white;
 }
 
-nav #navtitle {
+nav li.login { /* selects "login" from the li and moves it to the right*/
+  margin: 0px 0px 0px 415px;
+}
+
+
+nav #navtitle { /* Iron News */
   color: black;
   font-weight: bold;
 }
 
-nav #icon {
+nav #icon { /* white I icon in the header */
   color: white;
   font-weight: bold;
   border-color: white;
   border-style: solid;
   border-width: thin;
-  padding-left: 4px;
+  padding-left: 5px;
 }
 
 ol { /*ordered list with headlines*/
-  background-color: gainsboro;
+  background-color: ghostwhite;
   width: 80%;
   margin: 0% 5% 0% 5%;
   border-bottom: 3px solid;
@@ -49,22 +54,15 @@ ul { /*selects all the unordered lists*/
   list-style: none;
 }
 
-
 li.currentstatus { /* text below the headline*/
   font-size: 10pt;
   color: gray;
-  margin-left: -5%;
+  margin-left: -4%;
 }
 
 small.link { /* small link within parenthesis*/
   color: gray
 }
-
-
-ol li::after {
-  content: url(assets/images/grayarrow.gif);
-}
-
 
 /*http://stackoverflow.com/questions/76564/is-there-an-easy-way-to-change-the-color-of-a-bullet-in-a-list?rq=1*/
 li span { /*color of text*/
@@ -75,9 +73,13 @@ li.numbers { /*color of numbers*/
   color: gray;
 }
 
+li.numbers:before {
+  content: url('../images/grayarrow.jpg');
+}
+
 footer { /* bottom footer */
-  background-color: gainsboro;
-  width: 80%;
+  background-color: ghostwhite;
+  width: 83%;
   margin-left: 5%;
   margin-right: 5%;
 }
