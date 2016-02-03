@@ -57,7 +57,7 @@ ul { /*selects all the unordered lists*/
 li.currentstatus { /* text below the headline*/
   font-size: 10pt;
   color: gray;
-  margin-left: -4%;
+  margin-left: -2.5%;
 }
 
 small.link { /* small link within parenthesis*/
@@ -73,7 +73,7 @@ li.numbers { /*color of numbers*/
   color: gray;
 }
 
-li.numbers:before {
+li.numbers:before { /* triangle icon */
   content: url('../images/grayarrow.jpg');
 }
 
@@ -82,4 +82,20 @@ footer { /* bottom footer */
   width: 83%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+footer p { /*brings footer up to the border */
+  margin-top: 0%;
+  display: inline;
+}
+
+footer ul.footer { /*footer unorderedlist*/
+  font-size: 10pt;
+  margin: 0px;
+  padding: 5px 0px 5px 10px;
+}
+
+footer li { /*footer unordered list made vertical*/
+  display:inline;
+  margin-right: 5px;
 }
